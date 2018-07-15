@@ -68,9 +68,9 @@ def start(bot, update):
 	msg+= "-> `/myid`\n"
 	msg+= "\n"
 	msg+= "For more information📚, you can ask:\n"
-	msg+= "-> @dharmaraj24\n"
-	msg+= "-> @Asaf31214\n"
-	msg+= "-> @VrozAnims2003\n"
+	msg+= "-> `@dharmaraj_24`\n"
+	msg+= "-> `@Asaf31214`\n"
+	msg+= "-> `@VrozAnims2003`\n"
 	msg+= "---------------------------------------\n"
 	#send message to user
 	bot.send_message(chat_id=update.message.chat_id, text=msg, parse_mode=telegram.ParseMode.MARKDOWN)
@@ -130,7 +130,6 @@ def myid(bot, update):
 @run_async
 def res(bot, update):
 	global vip_developer
-	print("masuk")
 
 	if update.message.chat_id < 0:
 		return
@@ -140,12 +139,14 @@ def res(bot, update):
 			bot.send_message(chat_id=update.message.chat_id, text="Bot is restarting...")
 			time.sleep(0.2)
 			os.execl(sys.executable, sys.executable, *sys.argv)
-			print("masuk_vip")
 			return
 
 		elif update.message.chat_id != vip_developer:
 			return
 
+@run_async
+def logout(bot, update):
+	global vip_developer
 
 
 #####################################################################################################################
