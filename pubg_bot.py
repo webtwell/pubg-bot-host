@@ -22,7 +22,7 @@ except ImportError as e:
 #Bot Data (Please insert bot token here!)
 namebot = 'PUBG HOST BOT'
 verbot  = 'v1' #<== You can change this version with your real bot version
-tokenbot= '649674345:AAFTbhDPHxE1_uepOLfWMW2WIunFWXqHVcM' #<-- Put your bot token here!
+tokenbot= '5563775704:AAF-IAukBMGv-CC1WxrojekwF93D1FMJ8Pw' #<-- Put your bot token here!
 
 #polling setup
 try:
@@ -272,7 +272,7 @@ dispatcher.add_handler(callback_handler)
 #####################################################################################################################
 
 #start polling
-print(namebot,' ',verbot,' : Start!')
+print(namebot,' ',slideskbot,' : Start!')
 updater.start_polling()
 
 #updater.idle() #untuk menjalankan heroku webhook
